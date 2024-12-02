@@ -1,26 +1,25 @@
 <script setup lang="ts">
-import HelloWorld from "../../components/HelloWorld.vue";
-import TheWelcome from "../../components/TheWelcome.vue";
+import HeaderComponent from "@/components/HeaderComponent/HeaderComponent.vue";
+import BodyComponent from "@/components/BodyComponent/BodyComponent.vue";
+import FooterComponent from "@/components/FooterComponent/FooterComponent.vue";
 import styles from "./App.module.css";
 </script>
 
 <template>
     <div :class="styles.wrapper">
         <div :class="styles.container">
-          <div :class="styles.header">Header</div>
-          <div :class="styles.body">Body</div>
-          <div :class="styles.footer">Footer</div>
+          <div :class="styles.header">
+            <HeaderComponent />
+          </div>
+          <div :class="styles.body">
+            <BodyComponent />
+          </div>
+          <div :class="styles.footer">
+            <FooterComponent />
+          </div>
         </div>
     </div>
-    <!-- <header :class="styles.header">
-    <img alt="Vue logo" :class="styles.logo" src="../../assets/images/logo.svg" width="125" height="125" />
 
-    <div :class="styles.wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
+    <!-- <img alt="Vue logo" :class="styles.logo" src="../../assets/images/logo.svg" width="125" height="125" /> -->
 
-  <main>
-    <TheWelcome />
-  </main> -->
 </template>
