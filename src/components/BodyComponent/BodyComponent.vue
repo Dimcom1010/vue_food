@@ -11,21 +11,25 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
-import { fetchData } from '@/services/apiService';
+import { getPreloadData } from '@/services/apiService';
 import styles from './BodyComponent.module.css';
+import type { Product } from '@/types/Product';
 
-const data = ref(null);
-const loading = ref(false);
-const error = ref('');
+
+
+const data = ref<Product[] | null>(null);
+const loading = ref<boolean>(false);
+const error = ref<string>('');
 
 onMounted(async () => {
   try {
     loading.value = true;
-    data.value = await fetchData();
+    data.value = await getPreloadData();
   } catch (err) {
     error.value = 'Ошибка при получении данных';
   } finally {
     loading.value = false;
   }
 });
+
 </script>
