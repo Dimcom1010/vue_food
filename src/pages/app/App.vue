@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import HeaderComponent from "@/components/HeaderComponent/HeaderComponent.vue";
-import BodyComponent from "@/components/BodyComponent/BodyComponent.vue";
-import FooterComponent from "@/components/FooterComponent/FooterComponent.vue";
+import AppHeader from "@/components/AppHeader/AppHeader.vue";
+import AppBody from "@/components/AppBody/AppBody.vue";
+import AppFooter from "@/components/AppFooter/AppFooter.vue";
 import styles from "./App.module.css";
 </script>
 
@@ -9,17 +9,15 @@ import styles from "./App.module.css";
     <div :class="styles.wrapper">
         <div :class="styles.container">
           <div :class="styles.header">
-            <HeaderComponent />
+            <AppHeader/>
           </div>
           <div :class="styles.body">
-            <BodyComponent />
+            <AppBody />
           </div>
           <div :class="styles.footer">
-            <FooterComponent />
+            <AppFooter />
           </div>
         </div>
     </div>
-
-    <!-- <img alt="Vue logo" :class="styles.logo" src="../../assets/images/logo.svg" width="125" height="125" /> -->
 
 </template>
