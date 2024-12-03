@@ -1,0 +1,47 @@
+@import "../../assets/styles/variables.less";
+.card {
+    width: 100%;
+    aspect-ratio: 1;
+    position: relative;
+    overflow: hidden;
+    scroll-snap-align: start;
+    background-color: @white-ultra;
+    &__image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+    }
+    &__base {
+      position: absolute;
+      bottom: 80px;
+      width: 100%;
+      background-color: beige;
+    }
+    &__content {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        background: @black_60; 
+        color: white;
+        padding: 10px;
+        padding-bottom: 50px;
+        box-sizing: border-box;
+        transition: @transition;
+        backdrop-filter: blur(2px);
+        h2 {
+            margin-bottom: 2rem;
+        }
+        &:hover{
+          top:-120px;
+          background: @black_bb; 
+        }
+
+      
+    }
+}
