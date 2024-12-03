@@ -4,7 +4,7 @@ import { getPreloadData } from "@/services/apiService";
 import styles from "./Slider.module.less";
 import type { Product } from "@/types/Product";
 import Card from "@/components/Card/Card.vue";
-import Spiner from "@/components/Spiner/Spiner.vue";
+import Spinner from "@/components/Spinner/Spinner.vue";
 
 const data = ref<Product[] | null>(null);
 const loading = ref<boolean>(false);
@@ -27,7 +27,6 @@ const scrollNext = () => {
         const scrollAmount = slider.clientWidth / 3; 
         slider.scrollBy({ left: scrollAmount, behavior: "smooth" });
     }
-    // addOneProduct()
 };
 
 const scrollPrev = () => {
@@ -44,7 +43,7 @@ const scrollPrev = () => {
 <template>
     <div>
         <div  v-if="loading">
-            <Spiner></Spiner>
+            <Spinner></Spinner>
         </div>
         <div v-else-if="error">{{ error }}</div>
         <div v-else :class="styles.slider">

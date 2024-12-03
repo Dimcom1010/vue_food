@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Slider from "@/components/Slider/Slider.vue";
+import Footer from "@/components/Footer/Footer.vue";
 
 import styles from "./App.module.less";
 </script>
@@ -13,7 +14,8 @@ import styles from "./App.module.less";
             <div :class="styles.body">
                 <Slider />
             </div>
-            <div :class="styles.footer">2024</div>
+
+            <Footer></Footer>
         </div>
     </div>
 </template>

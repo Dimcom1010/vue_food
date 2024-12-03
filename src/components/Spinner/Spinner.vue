@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import styles from "./Spiner.module.less";
+import styles from "./Spinner.module.less";
 </script>
 
 <template>
