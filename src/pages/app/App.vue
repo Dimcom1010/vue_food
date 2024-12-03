@@ -8,7 +8,6 @@ import styles from "./App.module.less";
     <div :class="styles.wrapper">
         <div :class="styles.container">
             <div :class="styles.header">
-              
                 <H1>Тестовое задание</H1>
             </div>
             <div :class="styles.body">
