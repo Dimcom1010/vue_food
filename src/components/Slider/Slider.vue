@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, onMounted } from "vue";
 import { getPreloadData, getOneProduct } from "@/services/apiService";
-import styles from "./AppBody.module.less";
+import styles from "./Slider.module.less";
 import type { Product } from "@/types/Product";
 import Card from "@/components/Card/Card.vue";
 
@@ -38,11 +38,9 @@ const scrollPrev = () => {
 </script>
 
 <template>
-    <div :class="styles.body - container">
-        <h1>App Body</h1>
+    <div>
         <div v-if="loading">Loading...</div>
         <div v-else-if="error">{{ error }}</div>
-
         <div v-else :class="styles.slider">
             <div :class="styles.slider__container">
                 <div v-for="item in data" :key="item.id">

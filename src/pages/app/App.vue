@@ -1,23 +1,20 @@
 <script setup lang="ts">
-import AppHeader from "@/components/AppHeader/AppHeader.vue";
-import AppBody from "@/components/AppBody/AppBody.vue";
-import AppFooter from "@/components/AppFooter/AppFooter.vue";
+import Slider from "@/components/Slider/Slider.vue";
+
 import styles from "./App.module.css";
 </script>
 
 <template>
     <div :class="styles.wrapper">
         <div :class="styles.container">
-          <div :class="styles.header">
-            <AppHeader/>
-          </div>
-          <div :class="styles.body">
-            <AppBody />
-          </div>
-          <div :class="styles.footer">
-            <AppFooter />
-          </div>
+            <div :class="styles.header">
+              
+                <H1>Тестовое задание</H1>
+            </div>
+            <div :class="styles.body">
+                <Slider />
+            </div>
+            <div :class="styles.footer">2024</div>
         </div>
     </div>
-
 </template>

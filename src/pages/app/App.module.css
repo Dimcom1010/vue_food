@@ -1,7 +1,8 @@
 .wrapper {
+    font-family: "Ubuntu Condensed";
     display: flex;
     width: 100%;
-    background-color: aqua;
+    background-color: var(--vt-c-white-soft);
     justify-content: center;
     margin: -8px;
 }
@@ -13,21 +14,30 @@
     max-width: 1450px;
     width: 100%;
     padding-inline: 15px;
-    background-color: rgb(254, 128, 128);
+    background-color: var(--vt-c-white-soft);
     height: 100vh; /* Ensure the container takes the full height of the viewport */
 }
 
 .header {
-    background-color: rgb(254, 254, 152);
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .body {
-    background-color: rgb(251, 136, 251);
+    
     flex-grow: 1; /* Allow the body to take up remaining space */
 }
 
 .footer {
-    background-color: rgb(132, 145, 255);
+    background-color: #141414;
+    box-shadow: 0 0 0 100vmax #141414;
+    clip-path: inset(-2px -100vmax);
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
 }
 @media (min-width: 1024px) {
 
