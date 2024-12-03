@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, onMounted } from "vue";
-import { getPreloadData, getOneProduct } from "@/services/apiService";
+import { getPreloadData } from "@/services/apiService";
 import styles from "./Slider.module.less";
 import type { Product } from "@/types/Product";
 import Card from "@/components/Card/Card.vue";
@@ -23,7 +23,7 @@ onMounted(async () => {
 const scrollNext = () => {
     const slider = document.querySelector(`.${styles.slider__container}`);
     if (slider) {
-        const scrollAmount = slider.clientWidth / 3; // Adjust based on your grid-template-columns
+        const scrollAmount = slider.clientWidth / 3; 
         slider.scrollBy({ left: scrollAmount, behavior: "smooth" });
     }
 };
