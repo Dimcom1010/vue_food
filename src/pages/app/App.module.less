@@ -1,10 +1,11 @@
+@import "../../assets/styles/variables.less";
+@import "../../assets/styles/base.less";
+
 .wrapper {
-    font-family: "Ubuntu Condensed";
     display: flex;
     width: 100%;
-    background-color: var(--vt-c-white-soft);
+    background-color: @white;
     justify-content: center;
-    margin: -8px;
 }
 
 .container {
@@ -14,8 +15,8 @@
     max-width: 1450px;
     width: 100%;
     padding-inline: 15px;
-    background-color: var(--vt-c-white-soft);
-    height: 100vh; /* Ensure the container takes the full height of the viewport */
+    background-color: @white;
+    height: 100vh; 
 }
 
 .header {
@@ -25,21 +26,17 @@
 }
 
 .body {
-    
-    flex-grow: 1; /* Allow the body to take up remaining space */
+    flex-grow: 1; 
 }
 
 .footer {
-    background-color: #141414;
-    box-shadow: 0 0 0 100vmax #141414;
+    background-color: @black;
+    box-shadow: 0 0 0 100vmax @black;
     clip-path: inset(-2px -100vmax);
     padding: 12px 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #999;
+    color: @white;
 }
-@media (min-width: 1024px) {
 
-
-}

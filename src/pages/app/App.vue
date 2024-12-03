@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Slider from "@/components/Slider/Slider.vue";
 
-import styles from "./App.module.css";
+import styles from "./App.module.less";
 </script>
 
 <template>
