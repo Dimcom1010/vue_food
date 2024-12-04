@@ -40,6 +40,7 @@
 
 ![Разрешение 1200px](./src/assets/images/image.png)
 
+
 Разрешение 1000px
 
 ![Alt text](./src/assets/images/image-1.png)
