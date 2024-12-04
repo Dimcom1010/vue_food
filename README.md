@@ -37,24 +37,33 @@
 | Итого                               |   11 час 40 мин  |
 
 Разрешение 1200px
+
 ![Разрешение 1200px](./src/assets/images/image.png)
 
 Разрешение 1000px
+
 ![Alt text](./src/assets/images/image-1.png)
 
+
 Разрешение 550px
+
 ![Alt text](./src/assets/images/image-2.png)
 
+
 Наведение на название продукта
+
 ![Alt text](./src/assets/images/image-3.png)
 
 Наведение на кнопку
+
 ![Alt text](./src/assets/images/image-4.png)
 
 Смена слайда 
+
 ![Alt text](./src/assets/images/image-5.png) 
 
 Наведение на футер
+
 ![Alt text](./src/assets/images/image-6.png)
 
 
